@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
-import { Menu, X, Zap, LayoutDashboard, LogOut } from 'lucide-react';
+import { Menu, X, ThumbsUp, LayoutDashboard, LogOut } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './theme-toggle';
@@ -27,11 +27,11 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-base-700/60 bg-base-950/80 backdrop-blur-lg">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-400 to-brand-700 shadow-glow-sm">
-            <Zap size={16} className="text-white" fill="white" />
+          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-400 to-brand-700 shadow-glow-sm">
+            <ThumbsUp size={16} className="text-white" fill="white" />
           </span>
           <span className="font-display text-lg font-bold tracking-tight text-ink-50">
-            Social<span className="text-brand-400">Boost</span>
+            Social Boost
           </span>
         </Link>
 
