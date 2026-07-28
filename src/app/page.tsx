@@ -7,16 +7,15 @@ import { FaqSection } from '@/components/home/faq-section';
 import { CtaSection } from '@/components/home/cta-section';
 
 export default function HomePage() {
-    return (
-          <>
-                <Hero />
-                <LiveTicker />
-                <PlatformsGrid />
-                <HowItWorks />
-                <TestimonialsSection />
-                <FaqSection />
-                <CtaSection />
-          </>>
-        );
+  return (
+    <>
+      <Hero />
+      <LiveTicker />
+      <PlatformsGrid />
+      <HowItWorks />
+      <TestimonialsSection />
+      <FaqSection />
+      <CtaSection />
+    </>
+  );
 }
-</>
