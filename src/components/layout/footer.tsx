@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Zap } from 'lucide-react';
+import { ThumbsUp } from 'lucide-react';
 import { PLATFORMS } from '@/data/catalog';
 
 const FOOTER_LINKS = {
@@ -25,11 +25,11 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-400 to-brand-700">
-                <Zap size={16} className="text-white" fill="white" />
+              <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-400 to-brand-700">
+                <ThumbsUp size={16} className="text-white" fill="white" />
               </span>
               <span className="font-display text-lg font-bold text-ink-50">
-                Social<span className="text-brand-400">Boost</span>
+                Social Boost
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-ink-400">
@@ -69,7 +69,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-base-700/60 pt-6 sm:flex-row">
           <p className="text-xs text-ink-500">
-            © {new Date().getFullYear()} SocialBoost. Tous droits réservés.
+            © {new Date().getFullYear()} Social Boost. Tous droits réservés.
           </p>
           <p className="text-xs text-ink-500">Paiements sécurisés · Stripe · PayPal · Crypto</p>
         </div>
